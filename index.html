@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff7fa"><meta name="description" content="Share your thoughts with KEC Confessions.">
+  <title>KEC Confessions</title><link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="./"><span class="heart">♥</span> KEC <b>Confessions</b></a><nav><a class="active" href="./">Confess</a><a href="#crushmeter">Crushmeter</a></nav></header>
+<main class="wrap">
+  <div class="eyebrow">A LITTLE SPACE FOR BIG FEELINGS</div>
+  <h1>Your words.<br><em>Your secret.</em></h1>
+  <p class="intro">Got something on your mind? Let it out. This is your space to say what you can't say out loud.</p>
+  <section class="panel">
+    <div class="panel-head"><span class="dot"></span><span>DROP YOUR CONFESSION</span><span class="anon">100% anonymous</span></div>
+    <label class="sr" for="confession">Your confession</label>
+    <textarea id="confession" maxlength="1000" placeholder="Start typing what's on your mind..."></textarea>
+    <div class="counter"><span id="count">0</span>/1000</div>
+    <div class="category-title">PICK A VIBE <small>(OPTIONAL)</small></div>
+    <div class="categories" id="categories">
+      <button type="button" class="chip selected" data-category="None">♡ None</button>
+      <button type="button" class="chip" data-category="Love">♥ Love</button>
+      <button type="button" class="chip" data-category="Crush">✦ Crush</button>
+      <button type="button" class="chip" data-category="Friendship">☻ Friendship</button>
+      <button type="button" class="chip" data-category="Funny">☼ Funny</button>
+      <button type="button" class="chip" data-category="Secret">◌ Secret</button>
+      <button type="button" class="chip" data-category="Rant">↗ Rant</button>
+    </div>
+    <label class="consent"><input type="checkbox" id="agree"> <span>I confirm this confession does not contain anyone's private contact details, threats, or harmful content.</span></label>
+    <button class="submit" id="submit">Send anonymously <span>→</span></button>
+    <p class="privacy">Please don't include names, phone numbers, addresses, or identifying details. Be kind.</p>
+    <p class="status" id="status" role="status"></p>
+  </section>
+  <section class="below" id="crushmeter"><span class="mini-heart">♥</span><h2>KEC, there's a lot to say.</h2><p>Keep it kind. Keep it anonymous.</p></section>
+</main>
+<footer>MADE WITH <span>♥</span> FOR KEC</footer>
+</body></html>
